@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Yandex Translate</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Awesome videos!" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <style>
+        .pac-controls label {
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 300;
+        }
+        #phrase {
+            background-color: #fff;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: bolder;
+            margin-left: 12px;
+            padding: 0 11px 0 13px;
+            text-overflow: ellipsis;
+            width: 400px;
+        }
+        .header h1 {
+            font-size: 2.8em;
+            font-weight: bold;
+            text-align: center;
+            color: chartreuse;
+        }
+        .btn {
+            background-color: orangered;
+            padding: 6px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 3px;
+            cursor: pointer;
+            border-radius: 3px;
+            border: none;
+            color: white;
+        }
+        .dropdown-content {
+            display: inline-block;
+            background-color: orangered;
+            text-decoration: none;
+            min-width: 160px;
+            padding: 6px 40px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 3px;
+            border: none;
+        }
+        html,body{
+            background-image: url("redcolor.jpg");
+        }
+        h4{
+            color: black;
+            font-size: 26px;
+            text-align: center;
+            padding-right: 160px;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
+    <script src="YdxTranslate.js"></script>
+</head>
+
+<body ng-app="YdXTranslate">
+<div class="header"><h1>YandeX Translate App</h1></div>
+    <div ng-controller="YdXTranslatecontroller">
+        <div class="row" align="center">
+            <form action="#">
+                <table>
+                    <tr>
+                        <td><select name="from" id="inputlang" class="dropdown-content">
+                            <option selected disabled>Choose input language</option>
+                            <option value="te">Telugu </option>
+                            <option value="hi">Hindi</option>
+                            <option value="ml">Malayalam</option>
+                            <option value="ta">Tamil</option>
+                            <option value="mr">Marathi</option>
+                            <option value="kn">Kannada</option>
+                            <option value="ja">Japanese</option>
+                            <option value="fr">French</option>
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="de">German</option>
+                            <option value="gu">Gujarati</option>
+                            <option value="ga">Irish</option>
+                            <option value="zh">Latin</option>
+                            <option value="zh">Chinese</option>
+                            <option value="ko">Korean</option>
+                            <option value="el">Greek</option>
+                        </select></td>
+                        <td><input type="text" id="phrase" placeholder="Enter your text" class="form-control"></td>
+                    </tr>
+                </table>
+                <select name="to" id="lang" class="dropdown-content">
+                    <option selected disabled>Choose a language to translate</option>
+                    <option value="te">Telugu </option>
+                    <option value="hi">Hindi</option>
+                    <option value="ml">Malayalam</option>
+                    <option value="ta">Tamil</option>
+                    <option value="en">English</option>
+                    <option value="mr">Marathi</option>
+                    <option value="kn">Kannada</option>
+                    <option value="ja">Japanese</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                    <option value="de">German</option>
+                    <option value="gu">Gujarati</option>
+                    <option value="ga">Irish</option>
+                    <option value="zh">Latin</option>
+                    <option value="es">Spanish</option>
+                    <option value="zh">Chinese</option>
+                    <option value="ko">Korean</option>
+                    <option value="el">Greek</option>
+                </select>
+                <button class="btn" ng-click="translate()" >Click here to translate</button></form></br>
+                <p><h4><b>Translated Search Key Word:</b></h4></p>
+                <p><h4><b>{{output}}</b></h4></p>
+            <!--<div class="col2">-->
+                <!--<div id="results"></div>-->
+            <!--</div>-->
+        </form>
+        </div>
+    </div>
+
+</body>
+</html>
