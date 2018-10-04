@@ -1,0 +1,82 @@
+/*Creates a round border - used for the class panels*/
+.roundBorder{
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 5px;
+    padding-bottom: 15px;
+    margin: 15px;
+}
+/*gets rid of side padding from bootstrap*/
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0 0 0 0;
+}
+/*Makes the enroll button pretty*/
+.button{
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.margin{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.no-margin{
+    margin: 0px 0px 0px 0px;
+}
+.inputCSS{
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 5px;
+}
+
+.marginCenter{
+    margin-top: 15px;
+}
+
+.leftText{
+    text-align: left;
+}
+.box{
+    background-color: lightgray;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-size: 40px;
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.newbutton{
+    text-decoration: none;
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+.youtubeStyle{
+    padding: 3px 3px 3px 3px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
