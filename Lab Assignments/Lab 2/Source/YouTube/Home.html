@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+    <html lang="en" ng-app="myApp" class="no-js">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Youtube Data</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="bootstrap.css" >
+        <link rel="stylesheet" href="bootstrap-theme.css">
+    </head>
+
+<body class="body" background="http://clickwallpapers.com/1080p/spring-nature-high-resolution-wallpapers-wide-On-Wallpaper-1080p-HD.jpg">
+
+<div class  = "container" ng-controller="youtubeSearchController" style="top: 200px">
+    <div class = "row">
+        <h1 style="text-align: center">Videos<span class="youtubeStyle"> YouTube</span></h1>
+    </div><br>
+
+    <div class="row center">
+        <form ng-submit = "erase()">
+            <input class = "no-margin" type="text" id="txt_placeName" data-ng-model="clearInput" />
+            <button class="no-margin newbutton"  ng-click="getVideos(); erase()">Search</button>
+        </form>
+    </div>
+
+    <hr>
+    <div id="display_videos" >
+        <div ng-repeat="video in youtubeSearch">
+            <div class="center" style="float: left">
+                <div class = "roundBorder" ng-bind-html="video"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-sanitize.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+
+
+</body>
+
+</html>
