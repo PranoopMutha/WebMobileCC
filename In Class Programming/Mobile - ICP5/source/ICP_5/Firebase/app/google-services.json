@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "682410041490",
+    "firebase_url": "https://fir-app-d1120.firebaseio.com",
+    "project_id": "fir-app-d1120",
+    "storage_bucket": "fir-app-d1120.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682410041490:android:2ab3f3441420b29d",
+        "android_client_info": {
+          "package_name": "com.umkc.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682410041490-aqi6lj5uvof0o1r3ulaft3lbfivc9m6j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.umkc.firebase",
+            "certificate_hash": "9311f6b178561df00de646852e8aae9769c3c015"
+          }
+        },
+        {
+          "client_id": "682410041490-hv8bl7c85hbq1sa5bigijvm6ph1d3ddh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0QpIu0Sw3__WfvFu3_3MsREkLvKC42H8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682410041490-hv8bl7c85hbq1sa5bigijvm6ph1d3ddh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
