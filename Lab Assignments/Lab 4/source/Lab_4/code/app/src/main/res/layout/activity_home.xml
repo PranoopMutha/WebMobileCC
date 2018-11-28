@@ -8,29 +8,50 @@
     android:paddingLeft="30dp"
     android:paddingRight="30dp"
     android:paddingTop="16dp"
+    android:background="@drawable/bg"
     tools:context=".HomeActivity">
 
     <GridLayout
-        android:columnCount="3"
-        android:rowCount="1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="70dp"
+        android:columnCount="3"
+        android:rowCount="1">
+
         <Button
             android:id="@+id/btnCamera"
-            android:onClick="camera"
             android:background="#FFA500"
+            android:onClick="camera"
             android:text="Camera" />
 
         <Button
+            android:id="@+id/btnfree"
+            android:background="@color/colorWhite"
+            />
+
+        <Button
             android:id="@+id/btnMaps"
+            android:background="#00FF00"
             android:onClick="maps"
-            android:background="#54ff9f"
             android:text="Maps" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="392dp"
+        android:layout_marginLeft="130dp"
+        android:columnCount="1"
+        android:rowCount="1">
 
         <Button
             android:id="@+id/btnLogout"
+            android:background="#FF0000"
             android:onClick="logout"
-            android:background="#0000FF"
             android:text="Logout" />
     </GridLayout>
 

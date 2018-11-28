@@ -8,6 +8,7 @@
     android:paddingLeft="30dp"
     android:paddingRight="30dp"
     android:paddingTop="16dp"
+    android:background="@drawable/bg"
     tools:context=".RegisterActivity">
 
     <TextView
@@ -15,16 +16,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Register"
+        android:textStyle="bold"
+        android:text="User Registration"
         android:gravity="center_horizontal"
-        android:textSize="20sp"/>
+        android:textSize="30sp"/>
 
     <TextView
         android:id="@+id/lblUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:textSize="20sp"
         android:layout_below="@+id/lblLogin"
+        android:textStyle="bold"
         android:text="Email"/>
     <EditText
         android:id="@+id/txtUsername"
@@ -44,6 +48,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/lblUsernameError"
         android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:text="Password"/>
     <EditText
         android:id="@+id/txtPassword"
@@ -65,8 +71,8 @@
         android:layout_below="@+id/lblPasswordError"
         android:layout_centerHorizontal="true"
         android:text="Register"
-        android:textColor="@color/colorWhite"
-        android:background="@color/colorGreen"
+        android:textStyle="bold"
+        android:background="#ff9933"
         android:onClick="register"/>
 
 </RelativeLayout>
